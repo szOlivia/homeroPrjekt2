@@ -19,11 +19,16 @@ class Aktualis extends Controller
         INNER JOIN homersekletek ON (termek.t_id=homersekletek.t_id) 
         GROUP BY termek.t_id 
         ORDER BY homersekletek.h_id DESC");
+        /*
         $lat ="46.08333";
         $lon = "18.23333";
         $i = $this->idojaras($lat,$lon);
-        print_r($i);
-        return view("welcome",["aktualis"=> $aktualis]);
+        print_r($i); 
+        */
+
+        $telepulesek =DB::select("SELECT * FROM telepulesek");
+
+        return view("welcome",["aktualis"=> $aktualis , "telepulesek" => $telepulesek]);
     }
     public function idojaras($lat,$lon){
         $apiKey ="360dfc091e9b3af2707606bdacba0aa3";

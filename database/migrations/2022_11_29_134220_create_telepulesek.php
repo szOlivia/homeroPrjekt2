@@ -14,8 +14,11 @@ return new class extends Migration
     public function up()
     {
         Schema::create('telepulesek', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->id("te_id");
+            $table->string("nev",255);
+            $table->float("lat",10,8);
+            $table->float("lon",10,8);
+
         });
     }
 
