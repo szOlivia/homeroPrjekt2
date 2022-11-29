@@ -22,11 +22,12 @@ class Aktualis extends Controller
         $lat ="46.08333";
         $lon = "18.23333";
         $i = $this->idojaras($lat,$lon);
+        print_r($i);
         return view("welcome",["aktualis"=> $aktualis]);
     }
     public function idojaras($lat,$lon){
-        $apiKey ="360fc091e9b3af2707606bdacba0aa3";
-        $url ="https://api.openweathermap.org/data/2.5/weather?lat=".$lat."&lon".$lon."&appid=".$apiKey;
+        $apiKey ="360dfc091e9b3af2707606bdacba0aa3";
+        $url ="https://api.openweathermap.org/data/2.5/weather?lat=".$lat."&lon=".$lon."&appid=".$apiKey;
 
         $ch =curl_init();
         curl_setopt($ch,CURLOPT_HEADER,0);
@@ -36,6 +37,7 @@ class Aktualis extends Controller
         curl_setopt($ch,CURLOPT_VERBOSE,0);
         curl_setopt($ch,CURLOPT_SSL_VERIFYPEER,false);
         $valasz = curl_exec($ch);
+
         curl_close($ch);
         $idojarasAdatok = json_decode($valasz,true);
         return $idojarasAdatok;

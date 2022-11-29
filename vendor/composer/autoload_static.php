@@ -507,7 +507,13 @@ class ComposerStaticInit59079f43dfda997a5cd98c18ff5a3cb5
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\Aktualis' => __DIR__ . '/../..' . '/app/Http/Controllers/Aktualis.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\HomersekletRogzites' => __DIR__ . '/../..' . '/app/Http/Controllers/HomersekletRogzites.php',
+        'App\\Http\\Controllers\\Homersekletek' => __DIR__ . '/../..' . '/app/Http/Controllers/Homersekletek.php',
+        'App\\Http\\Controllers\\TeremRogzites' => __DIR__ . '/../..' . '/app/Http/Controllers/TeremRogzites.php',
+        'App\\Http\\Controllers\\Termek_listaja' => __DIR__ . '/../..' . '/app/Http/Controllers/Termek_listaja.php',
+        'App\\Http\\Controllers\\Termeklistaja' => __DIR__ . '/../..' . '/app/Http/Controllers/Termeklistaja.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',

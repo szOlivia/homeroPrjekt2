@@ -8,7 +8,13 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+    'App\\Http\\Controllers\\Aktualis' => $baseDir . '/app/Http/Controllers/Aktualis.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
+    'App\\Http\\Controllers\\HomersekletRogzites' => $baseDir . '/app/Http/Controllers/HomersekletRogzites.php',
+    'App\\Http\\Controllers\\Homersekletek' => $baseDir . '/app/Http/Controllers/Homersekletek.php',
+    'App\\Http\\Controllers\\TeremRogzites' => $baseDir . '/app/Http/Controllers/TeremRogzites.php',
+    'App\\Http\\Controllers\\Termek_listaja' => $baseDir . '/app/Http/Controllers/Termek_listaja.php',
+    'App\\Http\\Controllers\\Termeklistaja' => $baseDir . '/app/Http/Controllers/Termeklistaja.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',
