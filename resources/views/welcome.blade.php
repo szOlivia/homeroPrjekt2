@@ -9,6 +9,11 @@
             <div class="col-6">
                 <div class="bg-dark text-white p-3">
                     <h1>Terlepűlés info</h1>
+                    <select name="" id="telepules" class="form-select" >
+                        @foreach ($telepulesek as $item)
+                            <option value="{{$item->lat}}|{{$item->lon}}">{{$item->nev}}</option>
+                        @endforeach
+                    </select>
                 </div>
             </div>
 
