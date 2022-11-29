@@ -1,6 +1,30 @@
 @extends('layouts.master')
 @section('title','Főoldal')
 @section('content')
-     @include('menu')
-    <h1>Helló főoldal</h1>
+    @include('menu')
+     <div class="contenre">
+         <div  class="row">
+            <h1>Aktuális</h1>
+            @foreach ($aktualis as $item)
+               <div class="col-3">
+                   <div class=" text-center text-white rounded p-3
+                   @if($item->homerseklet<=15)
+                   bg-primary
+                   @elseif($item->homerseklet>15 && $item->homerseklet<=18)
+                   bg-success
+                   @else
+                   bg-danger
+                   @endif
+                   ">
+                       <span class="fw-bold display-4">{{$item->homerseklet}}&deg;</span>
+                       <br>
+                       {{$item->nev}}
+                       <br>
+                        {{$item->datum_ido}}
+                   </div>
+               </div>
+            @endforeach
+         </div>
+     </div>
+    
 @endsection
