@@ -14,6 +14,14 @@
                             <option value="{{$item->lat}}|{{$item->lon}}">{{$item->nev}}</option>
                         @endforeach
                     </select>
+                    
+                    <h2 id="telepules">N/A</h2>
+                    <h3><span id="temp">N/A</span>&deg;</h3>
+                    <img src="" id="kep"> <br>
+                    Széladatok: <br>
+                    Sebesség: <span id="wind_speed">N/A</span> km/h <br>
+                    Fok:<span id="wind_deg">N/A</span>&deg; <br>
+                    Lökésérték:<span id="wind_gust">N/A</span>
                 </div>
             </div>
 
