@@ -5,6 +5,14 @@
      <div class="contenre">
          <div  class="row">
             <h1>Aktuális</h1>
+
+            <div class="col-6">
+                <div class="bg-dark text-white p-3">
+                    <h1>Terlepűlés info</h1>
+                </div>
+            </div>
+
+
             @foreach ($aktualis as $item)
                <div class="col-3">
                    <div class=" text-center text-white rounded p-3
